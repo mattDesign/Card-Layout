@@ -1,0 +1,226 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/* Variables */
+$container-padding: 1em .5em;
+
+
+// colors
+$box-background:#f7f7f9;
+$teal:#3994be;
+$dark-teal:#2A6C8B;
+
+/* Mixins */
+// hr used for spacer
+@mixin spacer($height){
+  background-color:#fff;
+  height:$height;
+  border:none;
+  margin:0;
+}
+
+
+/* text styles */
+p {
+  font-size:.9rem;
+}
+
+h2{
+  font-size:1.4rem;
+  margin-bottom:1rem;
+}
+
+h3{
+  @extend h2;
+}
+
+h4{
+  font-size:1.1rem;
+  margin-bottom:0;
+}
+
+.btn{
+  border-radius:0;
+  border:none;
+  color:#fff;
+  padding:.2em 1.2em;
+}
+
+.btn-teal{
+  background-color:$teal;
+}
+
+.btn-teal:hover{
+  color:#fff;
+  background-color:$dark-teal;
+}
+/* End Text Styles */
+
+
+/* Header Banner */
+#headerBanner{
+  height:100%;
+  padding:.5em 1em 0 1em;
+}
+/* End Header Banner */
+
+
+/* Main Area (Left Sidebar / Right column containing card grid) */
+main{
+  margin-top:1.875em;
+  margin-bottom:.5em;
+
+  aside {
+    height:100%;
+
+    hr{
+      @include spacer(.5em);
+    }
+  }
+
+  .leftColumnFilter{
+    padding:$container-padding;
+
+    .btn{
+      font-weight:bold;
+    }
+    ul {
+      list-style-type:none;
+      padding-left:0px;
+      @extend p;
+      li{
+        padding:.5em 0;
+      }
+    }
+  }
+}
+
+#mainTiles{
+  height:100%;
+
+  .card{
+    margin:1em auto;
+    border-radius:0;
+  }
+
+  .card-body{
+    padding:.2em .5em .5em .5em;
+     h4{
+      margin-bottom:0px;
+    }
+
+    img{
+      margin-bottom:1em;
+    }
+  }
+
+  .mainTilesHeading {
+     p {
+       text-align:center;
+       font-weight:bold;
+       font-size:1em;
+     }
+  }
+
+  h2{
+    text-align:center;
+  }
+}
+
+.leftColumnList,
+#mainTiles{
+  padding:$container-padding;
+}
+
+aside,
+#mainTiles,
+.mobileOnly .leftColumnList,{
+  background-color:$box-background;
+}
+/* End Main Area */
+
+
+/* Hide Elements for Mobile Use */
+.mobileOnly{
+  display:none;
+}
+
+
+/* Responsive */
+/* Responsive */
+/* Responsive */
+
+// Extra small devices (portrait phones, up to 576px)
+@include media-breakpoint-down(xs) {
+
+ }
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-down(sm) {
+  // Show Elements on small screens
+  .mobileOnly{
+    display:block;
+  }
+
+  .mobileRemove{
+    display:none;
+  }
+
+  main{
+    margin-top:1.2em;
+
+    .leftColumnFilter{
+      text-align:center;
+
+      .btn{
+        font-weight:normal;
+      }
+
+      ul{
+        li {
+          display:inline-block;
+          width:32%;
+          &:nth-child(1){
+            text-align:left;
+          }
+          &:nth-child(2){
+            text-align:center;
+          }
+          &:nth-child(3){
+            text-align:right;
+          }
+        }
+      }
+
+      h2{
+        text-align:left;
+      }
+      .filter-submit{
+        display:inline-block;
+      }
+    }
+
+    aside{
+      hr{
+        @include spacer(1em);
+      }
+    }
+  }
+
+  .mobileOnly{
+    hr{
+      @include spacer(1em);
+    }
+  }
+ }
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-down(md) {
+ }
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-down(lg) {
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@include media-breakpoint-down(xl) {
+ }
