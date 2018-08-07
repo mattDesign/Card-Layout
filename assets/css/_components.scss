@@ -1,0 +1,213 @@
+/* Components */
+
+// Header hero
+.headerHero{
+  padding:$main-padding;
+  margin:1rem 0px;
+
+  img{
+    width:100%;
+    height:auto;
+  }
+
+}
+
+// Button Style
+.btn{
+  color:#fff;
+  padding:.4em 1.1em;
+  background-color:$teal;
+  text-decoration:none;
+  display:inline-block;
+
+  &:hover{
+      color:#fff;
+      background-color:$dark-teal;
+    }
+
+}
+
+.cardFilter,
+.articleListing,
+.cardContainer{
+  background-color:$box-background;
+  padding:$container-padding;
+}
+
+//card filter
+.cardFilter{
+  margin-bottom:8px;
+
+  ul {
+    list-style-type:none;
+    padding-left:0px;
+    @extend p;
+
+    li{
+      padding:.8em 0;
+    }
+
+  }
+
+  .btn{
+    font-weight:bold;
+  }
+
+}
+
+.articleListing{
+
+  h2{
+    margin-bottom:1em;
+  }
+
+  p{
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+}
+
+// Card Container
+.cardContainer{
+  text-align:center;
+  font-size:1em;
+  margin-left:30px;
+
+  h1{
+    margin-bottom:1em;
+  }
+
+  .cardSummary{
+    font-weight:bold;
+    font-size:1em;
+    max-width:680px;
+    margin:0 auto 1rem auto;
+  }
+
+  .grid{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    width:100%;
+  }
+
+}
+
+// Card
+.card{
+  background-color:$card-background;
+  margin:1em;
+  border:1px solid rgba(0, 0, 0, 0.125);
+
+  .cardBody{
+    padding:.5em;
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+
+    h3{
+      margin-top:1em;
+    }
+
+    p{
+      margin-top:0;
+    }
+
+    img{
+      width:100%;
+      height:auto;
+    }
+
+    .btn{
+      margin-top:auto;
+      margin-bottom:15px;
+      align-self:flex-start;
+    }
+
+  }
+
+}
+
+@media (min-width:0px){
+  .cardContainer{
+    margin:0px 0px 8px 0px;
+
+    .card{
+      display:none;
+      max-width:258px;
+      width:auto;
+      margin:0 auto 2rem auto;
+
+      &:nth-child(-n+2){
+        display:block;
+      }
+
+    }
+
+  }
+
+  .cardFilter{
+    text-align:center;
+
+    h2{
+      text-align:left;
+    }
+
+    ul{
+      display:flex;
+      flex-direction:row;
+      justify-content:space-between;
+    }
+
+    .btn{
+      margin:0 auto;
+      display:inline-block;
+    }
+
+  }
+
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+  .cardContainer{
+
+    .card{
+      width:100%;
+      max-width:320px;
+    }
+
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .cardContainer{
+    margin:0px 0px 0px 30px;
+
+    .card{
+      display:block;
+      width:320px;
+      max-width:320px;
+      margin:1rem;
+    }
+
+  }
+
+  .cardFilter{
+    text-align:left;
+
+    ul{
+      display:block;
+    }
+
+    .btn{
+      margin:0;
+    }
+
+  }
+
+}

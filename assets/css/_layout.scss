@@ -1,0 +1,62 @@
+/* Layout */
+
+@media (min-width:0px){
+
+  main{
+    display:flex;
+    height:100%;
+    padding:$main-padding;
+
+  }
+
+  // Map to grid-template-areas
+  .cardFilter{
+  }
+
+  .articleListing{
+  }
+
+  .cardContainer{
+  }
+
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+
+  main{
+    display:flex;
+    height:100%;
+    padding:0 15px;
+    margin-bottom:15px;
+  }
+
+  // Map to grid-template-areas
+  .cardFilter{
+    width:330px;
+  }
+
+  .articleListing{
+    width:330px;
+  }
+
+  .cardContainer{
+    width:100%;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

@@ -6,226 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--styles -->
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/build/css/styles.css" rel="stylesheet">
 
     <!-- Title -->
     <title>SEO Friendly Title</title>
+
   </head>
 
   <body>
 
-    <!-- Banner Image -->
-    <div id="headerBanner" class="container-fluid">
+    <!-- Hero Image -->
+    <div class="headerHero">
       <picture>
-        <source srcset="http://via.placeholder.com/320x171.jpg" media="(max-width: 320px)">
-        <source srcset="http://via.placeholder.com/546x171.jpg" media="(max-width: 576px)">
-        <source srcset="http://via.placeholder.com/736x230.jpg" media="(max-width: 768px)">
-        <source srcset="http://via.placeholder.com/960x300.jpg" media="(max-width: 992px)">
-        <img src="http://via.placeholder.com/1920x600.jpg" class="img-fluid" alt="Placeholder Banner Image"/>
+        <img src="assets/imgs/heroPlaceholder.gif" alt="Placeholder Banner Image"/>
       </picture>
     </div>
-    <!-- End Banner Image -->
+    <!-- End Hero Image -->
 
     <main>
-      <div class="container-fluid">
 
-        <div class="row">
-          <!-- Left Column -->
-          <div class="col-md-3">
-            <aside>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="leftColumnFilter">
-                    <h3>Heading</h3>
-                    <ul>
-                      <li>
-                        <label><input type="checkbox" aria-label="Checkbox for following text input">
-                          filter</label>
-                      </li>
-                      <li>
-                        <label><input type="checkbox" aria-label="Checkbox for following text input">
-                          filter</label>
-                      </li>
-                      <li>
-                        <label><input type="checkbox" aria-label="Checkbox for following text input">
-                          filter</label>
-                      </li>
-                    </ul>
-                    <a class="btn btn-teal filter-submit" href="#" role="button">Submit</a>
-                  </div>
-                </div>
-              </div>
-              <hr/>
-              <div class="row mobileRemove">
-                <div class="col-md-12">
-                  <div class="leftColumnList">
-                    <h3>Heading</h3>
-                    <div class="listItem">
-                      <h4>Title</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
-                    </div>
-                    <div class="listItem">
-                      <h4>Title</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
-                    </div>
-                    <div class="listItem">
-                      <h4>Title</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </aside>
-          </div>
-          <!-- End Left Column -->
+      <div class="cardFilter">
+        <h2>Heading</h2>
+        <form>
+          <ul>
+            <li>
+              <label><input type="checkbox" aria-label="Checkbox for following text input">
+                filter</label>
+            </li>
+            <li>
+              <label><input type="checkbox" aria-label="Checkbox for following text input">
+                filter</label>
+            </li>
+            <li>
+              <label><input type="checkbox" aria-label="Checkbox for following text input">
+                filter</label>
+            </li>
+          </ul>
+          <a class="btn" href="#" role="button">Submit</a>
+        </form>
+      </div>
 
-          <!-- Right Column -->
-          <div class="col-md-9">
-            <div id="mainTiles">
-              <h2>Heading</h2>
-              <div class="container-fluid">
-                <div class="row mainTilesHeading">
-                  <div class="col-sm-12 offset-sm-0 col-md-8 offset-md-2 text-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                      <div class="card-body">
-                        <picture>
-                          <source srcset="http://via.placeholder.com/467x230.jpg" media="(max-width: 576px)">
-                          <source srcset="http://via.placeholder.com/676x230.jpg" media="(max-width: 768px)">
-                          <source srcset="http://via.placeholder.com/295x160.jpg" media="(max-width: 992px)">
-                          <source srcset="http://via.placeholder.com/233x160.jpg" media="(max-width: 1200px)">
-                          <img src="http://via.placeholder.com/332x160.jpg" class="img-fluid" alt="Card Picture Placeholder"/>
-                        </picture>
-                        <h4 class="card-title">Title</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="#" class="btn btn-teal">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                      <div class="card-body">
-                        <picture>
-                          <source srcset="http://via.placeholder.com/467x230.jpg" media="(max-width: 576px)">
-                          <source srcset="http://via.placeholder.com/676x230.jpg" media="(max-width: 768px)">
-                          <source srcset="http://via.placeholder.com/295x160.jpg" media="(max-width: 992px)">
-                          <source srcset="http://via.placeholder.com/233x160.jpg" media="(max-width: 1200px)">
-                          <img src="http://via.placeholder.com/332x160.jpg" class="img-fluid" alt="Card Picture Placeholder"/>
-                        </picture>
-                        <h4 class="card-title">Title</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="#" class="btn btn-teal">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4 mobileRemove">
-                    <div class="card">
-                      <div class="card-body">
-                        <picture>
-                          <source srcset="http://via.placeholder.com/467x230.jpg" media="(max-width: 576px)">
-                          <source srcset="http://via.placeholder.com/676x230.jpg" media="(max-width: 768px)">
-                          <source srcset="http://via.placeholder.com/295x160.jpg" media="(max-width: 992px)">
-                          <source srcset="http://via.placeholder.com/233x160.jpg" media="(max-width: 1200px)">
-                          <img src="http://via.placeholder.com/332x160.jpg" class="img-fluid" alt="Card Picture Placeholder"/>
-                        </picture>
-                        <h4 class="card-title">Title</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="#" class="btn btn-teal">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4 mobileRemove">
-                    <div class="card">
-                      <div class="card-body">
-                        <picture>
-                          <source srcset="http://via.placeholder.com/467x230.jpg" media="(max-width: 576px)">
-                          <source srcset="http://via.placeholder.com/676x230.jpg" media="(max-width: 768px)">
-                          <source srcset="http://via.placeholder.com/295x160.jpg" media="(max-width: 992px)">
-                          <source srcset="http://via.placeholder.com/233x160.jpg" media="(max-width: 1200px)">
-                          <img src="http://via.placeholder.com/332x160.jpg" class="img-fluid" alt="Card Picture Placeholder"/>
-                        </picture>
-                        <h4 class="card-title">Title</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="#" class="btn btn-teal">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4 mobileRemove">
-                    <div class="card">
-                      <div class="card-body">
-                        <picture>
-                          <source srcset="http://via.placeholder.com/467x230.jpg" media="(max-width: 576px)">
-                          <source srcset="http://via.placeholder.com/676x230.jpg" media="(max-width: 768px)">
-                          <source srcset="http://via.placeholder.com/295x160.jpg" media="(max-width: 992px)">
-                          <source srcset="http://via.placeholder.com/233x160.jpg" media="(max-width: 1200px)">
-                          <img src="http://via.placeholder.com/332x160.jpg" class="img-fluid" alt="Card Picture Placeholder"/>
-                        </picture>
-                        <h4 class="card-title">Title</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="#" class="btn btn-teal">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4 mobileRemove">
-                    <div class="card">
-                      <div class="card-body">
-                        <picture>
-                          <source srcset="http://via.placeholder.com/467x230.jpg" media="(max-width: 576px)">
-                          <source srcset="http://via.placeholder.com/676x230.jpg" media="(max-width: 768px)">
-                          <source srcset="http://via.placeholder.com/295x160.jpg" media="(max-width: 992px)">
-                          <source srcset="http://via.placeholder.com/233x160.jpg" media="(max-width: 1200px)">
-                          <img src="http://via.placeholder.com/332x160.jpg" class="img-fluid" alt="Card Picture Placeholder"/>
-                        </picture>
-                        <h4 class="card-title">Title</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="#" class="btn btn-teal">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Right Column -->
-
+      <div class="articleListing">
+        <h2>Heading</h2>
+        <div>
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+        </div>
+        <div>
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+        </div>
+        <div>
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
         </div>
       </div>
 
-      <!-- List Items for Mobile Only -->
-      <div class="container-fluid mobileOnly">
-        <hr/>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="leftColumnList">
-              <h3>Heading</h3>
-              <div class="listItem">
-                <h4>Title</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
-              </div>
-              <div class="listItem">
-                <h4>Title</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
-              </div>
-              <div class="listItem">
-                <h4>Title</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
-              </div>
+      <div class="cardContainer">
+        <h1>Heading</h1>
+        <p class="cardSummary">Lorem ipsum dolor sit amet, consectetur adipsicing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+        <div class="grid">
+          <div class="card">
+            <div class="cardBody">
+              <picture>
+                <!-- Add sources for mobile / retina views -->
+                <img src="assets/imgs/imagePlaceholder.gif" alt="Card Picture Placeholder"/>
+              </picture>
+              <h3>Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardBody">
+              <picture>
+                <!-- Add sources for mobile / retina views -->
+                <img src="assets/imgs/imagePlaceholder.gif" alt="Card Picture Placeholder"/>
+              </picture>
+              <h3>Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardBody">
+              <picture>
+                <!-- Add sources for mobile / retina views -->
+                <img src="assets/imgs/imagePlaceholder.gif" alt="Card Picture Placeholder"/>
+              </picture>
+              <h3>Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardBody">
+              <picture>
+                <!-- Add sources for mobile / retina views -->
+                <img src="assets/imgs/imagePlaceholder.gif" alt="Card Picture Placeholder"/>
+              </picture>
+              <h3>Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardBody">
+              <picture>
+                <!-- Add sources for mobile / retina views -->
+                <img src="assets/imgs/imagePlaceholder.gif" alt="Card Picture Placeholder"/>
+              </picture>
+              <h3>Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardBody">
+              <picture>
+                <!-- Add sources for mobile / retina views -->
+                <img src="assets/imgs/imagePlaceholder.gif" alt="Card Picture Placeholder"/>
+              </picture>
+              <h3>Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn">Read More</a>
             </div>
           </div>
         </div>
       </div>
-      <!-- End List Items for Mobile Only -->
 
     </main>
-
-    <!-- Scripts -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
   </body>
 </html>
